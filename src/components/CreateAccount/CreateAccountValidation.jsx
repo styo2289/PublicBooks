@@ -2,7 +2,7 @@ function CreateAccountValidation(firstName, lastName, userName, email, password)
     const errors = {}
 
     const validName = new RegExp(
-        '^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$'
+        '^[a-zA-Z][a-zA-Z\\s]{0,20}[a-zA-Z]$'
     )
     const validUsername = new RegExp(
         '^[a-zA-Z0-9_-]{4,16}$'
