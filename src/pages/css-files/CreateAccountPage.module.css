@@ -1,70 +1,88 @@
-.background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 60%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.wrapper {
+.background{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    background-color: hsl(122, 21%, 52%);
+    min-height: 100vh;
+    background-size: cover;
+    background: url("../../images/vector_background - Copy.jpg") no-repeat center;
+}
+
+.wrapper {
+    width: 400px;
+    padding: 30px 40px;
     border-radius: 10px;
-}
-.text{
-    margin-top: 15px;
-    text-align: center;
-    font-family: "Arial Rounded MT Bold", serif;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-}
-
-.input {
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-{/*display: block;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;*/}
-
-.formErrors {
-    font-weight: bold;
-    padding: 3px;
+    /*background: #336633;*/
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     color: white;
 }
 
-.button{
-    font-size: 18px;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 26px;
-    box-shadow: 0 2px 2px #2a4a2a;
-    background-color: antiquewhite;
-    width: 100%;
+.wrapper h1{
+    text-align: center;
 }
 
-.label{
-    color: #2a4a2a;
-    text-align: left;
-    display: block;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
+.wrapper .inputBox{
+    width: 100%;
+    height: 50%;
+    margin: 20px 0;
 }
+
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 10px 25px 10px 10px;
+    font-size: 16px;
+}
+
+.inputBox input::placeholder{
+    opacity: 30%;
+}
+
+.wrapper .haveAccount{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
+
+.haveAccount a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.haveAccount a:hover{
+    text-decoration: underline;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.formErrors{
+    color:  #660000 ;
+}
+
