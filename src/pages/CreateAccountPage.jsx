@@ -16,8 +16,6 @@ function CreateAccountPage(){
 
     const [errors, setErrors] = useState({})
 
-    // TODO: INSERT VALIDATION OF INFORMATION: regex validation for all fields
-
     const navigate = useNavigate()
 
     function handleSubmit(e){
